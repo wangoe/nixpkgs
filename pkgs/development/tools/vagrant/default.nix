@@ -2,7 +2,7 @@
 , libxml2, libxslt, makeWrapper, p7zip, xar, gzip, cpio }:
 
 let
-  version = "1.9.1";
+  version = "1.9.3";
   rake = buildRubyGem {
     inherit ruby;
     gemName = "rake";
@@ -17,7 +17,7 @@ let
       else "system ${stdenv.system} not supported";
 
   sha256 = {
-    "x86_64-linux"  = "0l1if9c4s4wkbi8k00pl7x00lil21izrd8wb9nv2b5q4gqidc1nh";
+    "x86_64-linux"  = "1i6jh8sdb7igv9mj64sdi8fw0df1p7dz0wabifbx7vn7mkpnpzzs";
     "i686-linux"    = "1789wjwcpgw3mljl49c8v5kycisay684gyalkkvd06928423y9zb";
     "x86_64-darwin" = "1xrfq1a0xyifkhhjnpm6wsnms9w8c9q5rd2qqn4sm5npl7viy68p";
   }."${stdenv.system}" or (throw "system ${stdenv.system} not supported");
